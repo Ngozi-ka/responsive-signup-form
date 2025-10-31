@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: url(/images/bg-intro-desktop.png);
+  background-image: url(/bg-intro-desktop.png);
   background-color: hsl(0, 100%, 74%);
   background-repeat: no-repeat;
   display: flex;
@@ -150,6 +150,10 @@ button,
 }
 
 @media (max-width: 45rem) {
+
+    body{
+        background-image: url(/bg-intro-mobile.png);
+    }
   .container {
     flex-direction: column;
     gap: 1.5rem;
