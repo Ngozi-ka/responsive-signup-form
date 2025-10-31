@@ -1,168 +1,185 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-image: url(/images/bg-intro-desktop.png);
-    background-color: hsl(0, 100%, 74%);
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+body {
+  background-image: url(/images/bg-intro-desktop.png);
+  background-color: hsl(0, 100%, 74%);
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-.container{
-    display: flex;
-    gap: 3rem;
-    align-items: center;
-    width: 60rem;
-    padding: 2rem;
+.container {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  width: 60rem;
+  padding: 2rem;
 }
 
 .container > .learn-to-code {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    align-items: left;
-    color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: left;
+  color: white;
 }
 
-.learn-to-code > p{
-    font-size: 10px;
-    line-height: 1rem;
-    letter-spacing: 0.5px;
-    color: whitesmoke;
-    width: 60%;
+.learn-to-code > p {
+  font-size: 10px;
+  line-height: 1rem;
+  letter-spacing: 0.5px;
+  color: whitesmoke;
+  width: 60%;
 }
 
 .container > .form-container {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
 }
 
-.form-container > form{
-    max-width: 20rem;
+.form-container > form {
+  max-width: 20rem;
 }
 
 .form-container > .trial-info {
-    border: none;
-    background: hsl(248, 32%, 49%);
-    padding: 1rem 1rem 2rem;
-    color: whitesmoke;
-    font-size: 12px;
-    width: 20rem;
-    text-align: center;
-    border-radius: 5px;
+  border: none;
+  background: hsl(248, 32%, 49%);
+  padding: 1rem 1rem 2rem;
+  color: whitesmoke;
+  font-size: 12px;
+  width: 20rem;
+  text-align: center;
+  border-radius: 5px;
 }
 
-.form-container > .trial-info > span{
-    color: rgba(245, 245, 245, 0.589);
-    font-weight: 700;
+.form-container > .trial-info > span {
+  color: rgba(245, 245, 245, 0.589);
+  font-weight: 700;
 }
 
 .form-container > .form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    background: white;
-    width: 20rem;
-    padding: 2rem;
-    border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background: white;
+  width: 20rem;
+  padding: 2rem;
+  border-radius: 5px;
 }
 
-.form-container > .form > .each-form > input, button, .trial-info{
-    height: 2.5rem;
-    width: 100%;
-    padding: 1rem;
-    outline: none;
-    border: 1px solid hsla(246, 25%, 77%, 0.356);
+.form-container > .form > .each-form > input,
+button,
+.trial-info {
+  height: 2.5rem;
+  width: 100%;
+  padding: 1rem;
+  outline: none;
+  border: 1px solid hsla(246, 25%, 77%, 0.356);
 }
 
-
-.form-container > .form > .each-form > input::placeholder{
-    font-size: 10px;
-    font-weight: 550;
+.form-container > .form > .each-form > input::placeholder {
+  font-size: 10px;
+  font-weight: 550;
 }
 
-.form-container > .form button{
-    background: hsl(154, 59%, 51%);
-    color: whitesmoke;
-    text-align: center;
-    font-size: 10px;
-    font-weight: 550;
-    cursor: pointer;
+.form-container > .form button {
+  background: hsl(154, 59%, 51%);
+  color: whitesmoke;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 550;
+  cursor: pointer;
 }
 
-.form-container > .form > small{
-    font-size: 9px;
-    text-align: center;
-    font-weight: 550;
-    color: #333333c5;
+.form-container > .form > small {
+  font-size: 9px;
+  text-align: center;
+  font-weight: 550;
+  color: #333333c5;
 }
 
 .form-container > .form > small > a {
-    color: hsl(0, 100%, 74%);
-    text-decoration: none;
-    cursor: pointer;
+  color: hsl(0, 100%, 74%);
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .form-container > .form > .each-form {
-    position: relative;
+  position: relative;
 }
 
-.form-container > .form > .each-form > img{
-    width: 13px;
-    position: absolute;
-    right: 6%;
-    top: 40%;
+.form-container > .form > .each-form > .imgg {
+  width: 13px;
+  position: absolute;
+  right: 6%;
+  top: 40%;
 }
 
-.form-container > .form > .each-form > .error-msg{
-    font-size: 9px;
-    color: hsl(0, 100%, 74%);
-    font-weight: 550;
-    position: absolute;
-    right: 0;
+.first-img{
+    opacity: 0;
 }
 
-@media (max-width: 45rem ){
-    .container{
+.second-img{
+    opacity: 0;
+}
+
+.third-img{
+    opacity: 0;
+}
+
+.fourth-img{
+    opacity: 0;
+}
+
+
+.form-container > .form > .each-form > .error-msg {
+  font-size: 9px;
+  color: hsl(0, 100%, 74%);
+  font-weight: 550;
+  position: absolute;
+  right: 0;
+  opacity: 100;
+}
+
+@media (max-width: 45rem) {
+  .container {
     flex-direction: column;
     gap: 1.5rem;
     width: 40rem;
     padding: 0;
-}
+  }
 
-.container > .learn-to-code {
+  .container > .learn-to-code {
     align-items: center;
     gap: 1rem;
-}
+  }
 
-.learn-to-code > h1{
+  .learn-to-code > h1 {
     text-align: center;
     width: 80%;
-}
+  }
 
-.learn-to-code > p{
+  .learn-to-code > p {
     text-align: center;
-}
+  }
 
-.form-container > .trial-info {
+  .form-container > .trial-info {
     width: 15rem;
-}
+  }
 
-.container > .form-container {
+  .container > .form-container {
     gap: 1rem;
-}
+  }
 
-.form-container > form{
+  .form-container > form {
     max-width: 17rem;
-}
-
-
+  }
 }

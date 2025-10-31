@@ -23,35 +23,35 @@
 
         <form action="" class="form">
           <div class="each-form">
-            <input type="text" placeholder="First Name" /><img
+            <input type="text" placeholder="First Name" class="firstname" required/><img
               src="/images/icon-error.svg"
-              alt=""
+              alt=""  class="imgg first-img"
             />
-            <p class="error-msg">First name cannot be empty</p>
+            <p class="error-msg firstname-error"></p>
           </div>
           <div class="each-form">
-            <input type="text" placeholder="Last Name" /><img
+            <input type="text" placeholder="Last Name" class="lastname" required/><img
               src="/images/icon-error.svg"
-              alt=""
+              alt="" class="imgg second-img"
             />
-                        <p class="error-msg">Last name cannot be empty</p>
+            <p class="error-msg lastname-error"></p>
           </div>
           <div class="each-form">
-            <input type="email" placeholder="Email Address" /><img
+            <input type="email" placeholder="Email Address" class="email" required/><img
               src="/images/icon-error.svg"
-              alt=""
+              alt=""  class="imgg third-img"
             />
-                        <p class="error-msg">Looks like this is not an email</p>
+            <p class="error-msg email-error"></p>
           </div>
           <div class="each-form">
-            <input type="password" placeholder="Password" /><img
+            <input type="password" placeholder="Password" class="password" required/><img
               src="/images/icon-error.svg"
-              alt=""
+              alt=""  class="imgg fourth-img"
             />
-                        <p class="error-msg">Password cannot be empty</p>
+            <p class="error-msg password-error"></p>
           </div>
 
-          <button type="submit">Claim your free trial</button>
+          <button type="submit" class="btn">Claim your free trial</button>
 
           <small
             >By clicking the button, you are agreeing to our
